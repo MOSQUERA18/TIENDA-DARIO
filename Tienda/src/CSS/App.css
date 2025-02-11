@@ -10,6 +10,110 @@ body {
     color: black;
 }
 
+.cart {
+    max-height: 250px;
+    overflow-y: auto;
+    border: 2px solid #007bff;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart h2 {
+    color: black;
+    text-align: center;
+  }
+  
+  .cart-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+
+  .login-btn{
+    color: #2c3e50;
+  }
+
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .cart-item span {
+    flex-grow: 1;
+    font-weight: bold;
+  }
+  
+  .cart-item button {
+    border: none;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .cart-item button:hover {
+    background-color: #c82333;
+  }
+  
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .quantity-controls button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* .quantity-controls button:hover {
+    background-color: #0056b3;
+  } */
+  
+  .total-container {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: black;
+  }
+  .confirm-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .confirm-button:hover {
+    background-color: darkgreen;
+  }
+  
+  
+
 /* Header */
 .header {
     background-color: #2c3e50;
@@ -62,6 +166,14 @@ body {
     text-align: center;
     color: #e74c3c;
     font-size: 1.2em;
+}
+
+.welcome{
+    color: #2c3e50;
+}
+
+.logout-btn{
+    color: #2c3e50;
 }
 
 /* Tarjeta de producto */
@@ -119,11 +231,6 @@ button .bi-pencil-square {
     max-width: 600px;
 }
 
-.cart h2 {
-    font-size: 1.5em;
-    margin-bottom: 15px;
-    color: #2c3e50;
-}
 
 .cart ul {
     list-style: none;
